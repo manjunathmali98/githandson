@@ -1,0 +1,47 @@
+to download git bash use https://git-scm.com/downloads
+git version ---- to get the version of git installed.
+git help <nameofthecommand> ---- to know more and how to use the command.
+pwd ---- returns the present working directory
+
+How to configure the username and Email
+git config --global user.name "manjunathmali98"
+git config --global user.email "manjunathmai98@outlook.com"
+
+How to create a Empty Git Repository in a director
+git init <Reponame>
+
+Add files to from local drive to git 
+just go to the folder where all the code is present and just "git init" from it and the folder is now managed by git
+
+git status --- to get details on the branch we are working on and details about tracked and untracked files
+
+Move Files from Local to Staging area 
+"git add <fileName>" or "git add ." (to add all files)
+
+Commiting the code to GitHub
+git commnit -m "<message about the Commit>"
+
+To clear screen
+clear
+
+To move to stage area and Commit in 1 step
+git commit -am "<message>"
+
+Unstage the changes made to a File
+git reset HEAD <fileName>
+
+Discard changes in working directory
+git checkout -- <filename>
+
+Display all commits done to a Repo
+git log
+
+Remove a File from Github Repo
+1. git rm <fileName>  --- removes the file from your local directory
+2. git status --- to check if the file deletion is to be done on the Repo
+3. git commit -m "removing the file <filename> from Repo"
+          OR
+if you manually deleted a file then git will detect that the file is deleted and "git add ." will not work so then, we need to use "git add -u" and then perform git commit
+
+To ignore some files being commited to git 
+create a .gitignore file and then add the filename or type to it , Ex: *.log will ignore all LOG files and save the .gitignore file
