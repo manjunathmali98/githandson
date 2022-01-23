@@ -1,0 +1,18 @@
+sign up to heroku 
+log in
+use new app button to create a new app
+enter the app name and the country or region where you want your server to be and click create app
+In deployment method click github
+then it asks you to specify the name of the repository (before this it might ask you to provide heroku access to your github account)
+connect it to the Repo
+select the branch you want to deploy
+click on deploy branch ,dont enable automatic deploys
+wait for some time untill the deploy is successful
+once its done it will return an URL by which you can access the application
+then it return a view button, which will redirect you to the application.
+
+but its not connected to DB
+to do that u need to install a add-on on heroku
+
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
